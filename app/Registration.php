@@ -20,4 +20,13 @@ class Registration extends Model
         'referred_by',
         'password'
     ];
+
+    /**
+     * Get the Points
+     */
+    public function getPoints()
+    {
+        return $this->hasMany('App\ReferencePoint','user_id','id');
+    }
+    
 }

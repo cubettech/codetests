@@ -25,8 +25,7 @@ class ReferenceController extends Controller
             $referedBy = $getUser->id;
           }
           
-        }        
-        // return $getUser;
+        } 
         $registerData = array(
             'name' => $input['name'],
             'email'  => $input['email'],
@@ -90,5 +89,16 @@ class ReferenceController extends Controller
      }
 
     public function getBoard(){
+       $register = Registration::select('name','id')->get();
+       $userDetails = array();
+       foreach( $register as $r){
+        $data = array(
+            'name' => $r->name,
+            'id' => $r->id,
+            'Points' => $r->getPoints->sum('points'),
+        );
+        array_push($userDetails, $data);
+       }
+       return response()->json(['data' => $userDetails]);
     }
 }
