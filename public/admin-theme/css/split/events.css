@@ -1,0 +1,96 @@
+.main_contents .gdnt_banner{
+	background-image: url('../../images/blog-bg.jpg');
+	background-position: center bottom;
+}
+.main_contents h1 i[class^="ai-"]{
+	position: relative;
+	font-size: 60px;
+	top: 13px;
+}
+.main_contents > ._inner{
+	padding: 0 25px;
+}
+
+article.post.single{
+	width: 75%;
+	/* background-color: rgba(255, 0, 0, 0.17); */
+}
+article.post.single h2.heading{
+	position: relative;
+	padding-left: 0;
+	
+}
+article.post.single h2.heading span.info{
+	font-size: 15px;
+	position: relative;
+	background-color: rgb(20, 168, 209);
+	padding: 10px 10px 3px 13px;
+	line-height: 38px;
+	color: #FFFFFF;
+	border-radius: 0 4px;
+	left: 0;
+	display: inline-block;
+	top: 0;
+	float: left;
+	margin-right: 10px;
+}
+article.post.single h2.heading span.info > *{
+	display: block;
+	float: left;
+}
+article.post.single h2.heading span.info .day{
+	font-size:32px;
+	font-family: 'nexa_lightregular', sans-serif;
+	margin-right: 7px;
+}
+article.post.single h2.heading span.info .month{
+    height: 10px;
+    line-height: 17px;
+    font-weight: 400;
+}
+article.post.list header .info .year{
+	
+}
+article.post.single h2.heading span.title{
+	display: block;
+	white-space: normal;
+}
+article.post.single h2.heading span.author{
+	text-align: left;
+	font-size: 15px;
+	margin-top: 8px;
+}
+article.post.single h2.heading span.author i{
+	background-color: rgba(20, 168, 209, 0.29);
+	font-family: 'Open Sans';
+	font-weight: normal;
+	padding: 2px 6px;
+	display: inline-block;
+	color: #024E63;
+	font-size: 12px;
+	border-radius: 3px;
+	
+}
+
+aside.rt{
+	/* background-color: rgba(0, 128, 0, 0.13); */
+	width: 25%;
+}
+aside.rt > h3{
+	color: #000;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+aside.rt .blist > li{
+	margin-bottom: 15px;
+}
+aside.rt .blist > li img{
+	margin-right: 12px;
+	border-radius: 4px;}
+aside.rt .blist > li h3{
+	float: left;
+	font-family: 'Open Sans';
+	word-wrap: break-word;
+	font-size: 14px;
+}

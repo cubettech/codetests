@@ -1,0 +1,183 @@
+@charset "utf-8";
+@font-face {
+    font-family: "nexa_lightregular";
+    src: url("fonts/nexa_light-webfont.eot");
+    src: url("fonts/nexa_light-webfont.eot") format("embedded-opentype"),
+        url("fonts/nexa_light-webfont.woff") format("woff"),
+        url("fonts/nexa_light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ecomm-icon";
+    src: url("fonts/Ecomm-icon.eot");
+    src: url("fonts/Ecomm-icon.eot") format("embedded-opentype"),
+        url("fonts/Ecomm-icon.woff") format("woff"),
+        url("fonts/Ecomm-icon.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*[class^="ai-"],
+*[class*=" ai-"] {
+    font-family: "Ecomm-icon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /*font-size: 40px;*/
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ai-google-plus:before {
+    content: "\a600";
+}
+.ai-facebook:before {
+    content: "\a601";
+}
+.ai-twitter:before {
+    content: "\a602";
+}
+.ai-vimeo:before {
+    content: "\a603";
+}
+.ai-you-tube:before {
+    content: "\a604";
+}
+.ai-linked-in:before {
+    content: "\a605";
+}
+.ai-skype:before {
+    content: "\a606";
+}
+.ai-window:before {
+    content: "\a607";
+}
+.ai-star:before,
+.ai-events:before {
+    content: "\a608";
+}
+.ai-settings:before {
+    content: "\a609";
+}
+.ai-reload:before {
+    content: "\a60a";
+}
+.ai-pen:before {
+    content: "\a60b";
+}
+.ai-note-pen:before {
+    content: "\a60c";
+}
+.ai-message:before {
+    content: "\a60d";
+}
+.ai-lock:before {
+    content: "\a60e";
+}
+.ai-home:before {
+    content: "\a60f";
+}
+.ai-photo:before {
+    content: "\a610";
+}
+.ai-photos:before {
+    content: "\a611";
+}
+.ai-draw-anchor:before {
+    content: "\a612";
+}
+.ai-delete:before {
+    content: "\a613";
+}
+.ai-support:before,
+.ai-chat:before {
+    content: "\a614";
+}
+.ai-cart:before {
+    content: "\a615";
+}
+.ai-blog:before,
+.ai-book:before {
+    content: "\a616";
+}
+.ai-aim:before {
+    content: "\a617";
+}
+.ai-about:before,
+.ai-about-us:before {
+    content: "\a618";
+}
+.ai-bulb:before {
+    content: "\a619";
+}
+.ai-mobile-development:before,
+.ai-mob:before {
+    content: "\a61a";
+}
+.ai-design:before {
+    content: "\a61b";
+}
+.ai-note:before {
+    content: "\a61c";
+}
+.ai-featured-projects:before {
+    content: "\a61d";
+}
+.ai-services:before {
+    content: "\a61e";
+}
+.ai-online-services:before,
+.ai-online:before {
+    content: "\a61f";
+}
+.ai-facebook-apps:before,
+.ai-fb:before {
+    content: "\a620";
+}
+.ai-web-development:before,
+.ai-web:before {
+    content: "\a621";
+}
+.ai-trophy:before {
+    content: "\a622";
+}
+.ai-online-promot:before {
+    content: "\a623";
+}
+.ai-project:before,
+.ai-projects:before,
+.ai-development:before {
+    content: "\a624";
+}
+.ai-preplan:before {
+    content: "\a625";
+}
+.ai-view:before {
+    content: "\a626";
+}
+.ai-link:before {
+    content: "\a627";
+}
+.ai-octogen-line:before {
+    content: "\a628";
+}
+.ai-octogen:before {
+    content: "\a629";
+}
+.ai-arrow-left:before {
+    content: "\a62a";
+}
+.ai-arrow-top:before {
+    content: "\a62b";
+}
+.ai-arrow-right:before {
+    content: "\a62c";
+}
+.ai-arrow-down:before {
+    content: "\a62d";
+}

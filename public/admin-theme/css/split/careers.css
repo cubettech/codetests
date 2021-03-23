@@ -1,0 +1,77 @@
+.career-main *{
+	transition: all 300ms ease;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+}
+.main_contents section.gdnt_banner{
+	background-image: url('../../images/careers-bg.jpg');
+	background-position: center bottom;
+	margin:0px;
+}
+.main_contents h1 i[class^="ai-"]{
+	font-size: 55px;
+	margin-right: 10px;
+}
+.career-main{
+}
+.career-main ul{
+	width:100%;
+	height:auto;
+}
+.career-main li{
+	background:#D8F0FF;
+    border-bottom: 1px solid #9DD5FF;
+}
+.career-main li:hover{
+	background:#fff;
+}
+.career-main  li .lt{
+	width:50%;
+	position:relative;
+	padding-right:25px;
+}
+.career-main  li .lt h1{
+	display: inline-block;
+	border-bottom: 2px solid rgba(20, 114, 170, 0.5);
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+.career-main  li .lt p{
+	color: #323232;
+}
+.career-main  li .rt{
+	width:50%;;
+}
+.career-main  li > .leftheader{
+	font-family: 'nexa_lightregular', sans-serif;
+	font-weight:normal;
+	margin:100px 100px 300px 300px;
+	width:auto;
+	color:#1472aa;
+	border-top:medium solid #1472aa;
+}
+.career-main table{
+	margin: 20px 0;
+	color: #575757;
+	background: #fff;
+	padding: 2px;
+}
+.career-main li:hover table{
+	background: rgba(219, 240, 253, 0.43);
+}
+.career-main li:hover .gnt.arr:after{
+	opacity: 1;
+	margin-left: 10px;	
+}
+.career-main table tr:nth-child(odd){
+	background: rgba(28, 65, 132, 0.09);
+}
+.career-main table tr > *{
+	padding: 8px 12px;
+}
+.career-main li > .content{
+	color:#1472aa;
+	padding:40px;
+}

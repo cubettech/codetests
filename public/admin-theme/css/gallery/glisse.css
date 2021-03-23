@@ -1,0 +1,207 @@
+html{height:100%}
+
+/* Glisse: Hide elements by default */
+#glisse-overlay, #glisse-close, #glisse-controls,#glisse-spinner{opacity:0;}
+
+/* Glisse: Overlay */
+#glisse-overlay {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,.75);
+}
+    #glisse-overlay.loading #glisse-spinner {opacity:1;} /* Display spinner */
+    
+/* Glisse: Overlay content */    
+/* Glisse: Overlay content */
+#glisse-overlay-content {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0;
+    -moz-background-size:       contain;
+    -webkit-background-size:    contain;
+    -o-background-size:         contain;
+    background-size:            contain;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:        hidden;
+}
+    /* Hide images */
+    #glisse-overlay-content img{display:none;}
+
+    /* Shake effect */
+    #glisse-overlay-content.shake {
+        -webkit-animation: shake 600ms 1;
+        -moz-animation:    shake 600ms 1;
+        -ms-animation:     shake 600ms 1;
+        -o-animation:      shake 600ms 1;
+        animation:         shake 600ms 1;
+    }
+
+/* Glisse: Close button */
+#glisse-close { cursor:pointer; }
+
+/* Glisse: Spinner */
+#glisse-spinner {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    height: 80px;
+    width: 80px;
+   background: rgba(0,0,0,.6) url(../../images/loader.gif) center center no-repeat;
+    border-radius:6px;
+}
+
+/* Glisse: Controls bar */
+/* Wrapper */
+#glisse-controls {}
+    
+    /* Prev/Next button */
+    .glisse-next a, .glisse-prev a{
+        -webkit-transition:all 100ms ease;
+        -moz-transition:all 100ms ease;
+        -o-transition:all 100ms ease;
+        -ms-transition:all 100ms ease;
+        transition:all 100ms ease;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        user-select:none;
+    }
+    #glisse-controls .ended a {opacity:.3;cursor:default;} /* disabled effect */
+
+/* Glisse: Keyframes */
+@-webkit-keyframes shake {
+    0%, 100% {-webkit-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+    0%, 100% {-moz-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@-ms-keyframes shake {
+    0%, 100% {-ms-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-ms-transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {-ms-transform: translateX(10px);}
+}
+
+@-o-keyframes shake {
+    0%, 100% {-o-transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.photos{
+    cursor:pointer;
+}
+/* Glisse: Overlay */
+#glisse-overlay {
+    background-color: rgba(34, 63, 73, .89);
+}
+
+#glisse-close {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: fixed;
+    top:10px;
+    right:10px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEIxRkZGMzVCMDE3MTFFMzhDMTA4MzU2QUMyQTQ2NEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEIxRkZGMzZCMDE3MTFFMzhDMTA4MzU2QUMyQTQ2NEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QjFGRkYzM0IwMTcxMUUzOEMxMDgzNTZBQzJBNDY0QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QjFGRkYzNEIwMTcxMUUzOEMxMDgzNTZBQzJBNDY0QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pj1kSj8AAADISURBVHjaYvj//38lEN8D4mggZsCDNYH4OhBvBfFBAtf+I0A4Dk1yQPwVSR1Yoz4Qf0ESjEPTpAXEb5Hko2AaQVgHTXMAVFwEiD8iiafBDET3wx8kRXVAfAuXS9D9YgTE9/+jgs9AnI3ub2wBYYumsRNbgKELSAPxCTSNj4HYD59GUEA8R9IwC4jfIPGdsWmUAeJHWEJPDYj/IokHIWuUBeKnSJJlBPzsDNN4CkmwFEfKsUDTDNbYDcQv8GiCYUdoQB0D8QECDACvC2tIr1dkXQAAAABJRU5ErkJggg==) no-repeat rgba(0,0,0,.5) center;}
+
+#glisse-wrapper{
+    z-index:1000;
+    position:relative;  
+}
+
+/* Prev/Next button */
+i.arrows{
+    width: 40px;
+    height: 40px;
+    display: block;
+    bottom: 10px;
+    background:rgba(0, 0, 0, 0.43);
+    text-indent:200px;
+    color:red;
+    position:fixed;
+    overflow:hidden;
+}
+i.arrows:before{
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+    text-indent:10px;
+    margin-top:10px;
+    font-size:20px;;
+}
+i.arrows a{
+    color:transparent;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+i.arrows.glisse-next{
+    left: 50%;
+    margin-left: 20px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+i.arrows.glisse-prev{
+    left: 50%;
+    margin-left: -40px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+i.arrows.ended{
+    opacity: .2;
+}
+/* Legend */
+.glisse-legend {
+    position:fixed;
+    left:10px;
+    color:white;
+    background:rgba(0, 0, 0, 0.43);
+    padding:10px;
+    top:10px; }
+
+.photo-group{
+    
+}
+.photo-group li{
+    float:left;
+    cursor:pointer;
+    width:16.66%;
+    padding:5px;
+}
+.photo-group img{
+    width:100%;
+    height:auto;
+}
+.fb_like_box{
+    background:#E5E5E5;
+    padding:15px;
+    margin-bottom:10px;
+}

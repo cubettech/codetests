@@ -1,0 +1,354 @@
+.img-valign {
+    vertical-align: middle;
+    
+    height: 300px;
+}
+
+.text1 {
+  font-size: 44px;
+}
+
+.text2 {
+  font-size: 24px;
+}
+
+.portfolioContainer .sectionLeft img {
+	float: left;
+	width: 50%;
+}
+.portfolioContainer .sectionLeft {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+.portfolioContainer .sectionLeft a {
+	text-decoration: none;
+	color: #7e7e7e;
+}
+.portfolioContainer .sectionRight img {
+	float: right;
+	width: 50%;
+}
+.portfolioContainer .sectionRight {
+	width: 50%;
+	float: right;
+}
+.portfolioContainer .sectionRight a {
+	text-decoration: none;
+    color: #7e7e7e;
+}
+.portfolioContainer .sectionLeft label {
+    font-weight: 600;
+    font-size: 14px;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    /* color: #000; */
+    pointer-events: none;
+    height: 300px;
+    position: relative;
+}
+.portfolioContainer .sectionRight label {
+    font-weight: 600;
+    font-size: 14px;
+    float: right;
+    width: 50%;
+    padding: 20px;
+}
+.portfolioContainer .sectionLeft label h2 span, .portfolioContainer .sectionRight label h2 span {
+	font-size: 25px;
+}
+.portfolioContainer .sectionLeft label h2, .portfolioContainer .sectionRight label h2 {
+	font-size: 20px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+}
+.portfolio .main_contents .gdnt_banner {
+	margin-bottom: 0px;
+}
+.portfolio .main_contents ._inner {
+	padding: 0px;
+}
+.portfolio_custom{
+	position: relative;
+}
+.connecting-div{
+	/*position: absolute;
+    left: -11px;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    margin: auto;
+    top: 8%;
+    border-top: 12px solid transparent;
+    border-right: 23px solid #000000;
+    border-bottom: 12px solid transparent;*/
+        position: absolute;
+    left: -51px;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-top: 62px solid transparent;
+    border-right: 53px solid #fefffe;
+    border-bottom: 62px solid transparent;
+    transition: 0.5s;
+}
+.portfolioContainer .sectionRight .connecting-div{
+	border-top: 62 solid transparent;
+      border-left: 53px solid #fff;
+      border-bottom: 62 solid transparent;
+      border-right: initial;
+      left: 51px;
+}
+.portfolio_custom h2{
+	font-size: 23px !important;
+	white-space: inherit;
+	line-height: 25px;
+	overflow: inherit;
+	margin-bottom: 20px !important;
+	color: #55bcdc;
+	z-index: 11;
+	font-weight: 700 !important;
+}
+.portfolio_custom h2::first-letter{
+	/*color: #54bbda;*/
+	font-size: 40px !important;
+}
+.shadow_class{
+	position: absolute;
+	background: #53b6d3;
+	opacity: 0;
+	transition: 0.3s;
+	/*
+    width: 10px;
+    margin: 2%;
+    height: 92%;*/
+	left: 50%;
+	width: 10px;
+	height: 100%;
+}
+.clone_shawod{
+	border-bottom: 2px solid #252a2e;
+	width: 5%;
+	height: 92%;
+	margin: 2% 0 0 0;
+	transition: 0.5s;
+}
+.portfolioContainer .sectionLeft:hover .shadow_class{
+	opacity: 1;
+    transition: 0.5s;
+    width: 50%;
+    z-index: -1;
+}
+.portfolioContainer .sectionLeft:hover .clone_shawod{
+	width: 92%;
+	height: 92%;
+	transition: 1s;
+}
+.portfolioContainer .sectionLeft:hover label{
+	color: #ffffff;
+	z-index: 11;
+	transition: 0.5s;
+}
+.portfolioContainer .sectionLeft:hover label h2{
+	color: #000;
+	transition: 0.5s;
+}
+.portfolioContainer .sectionLeft:hover .connecting-div{
+	border-right: 53px solid #53b6d3;
+	transition: 0.5s;
+}/*
+.portfolioContainer .sectionLeft:hover h2::first-letter{
+	color: #000;
+}*/
+.portfolioContainer .sectionRight .shadow_class{
+	left: 48%;
+	z-index: -1;
+}
+.portfolioContainer .sectionRight:hover .shadow_class{
+	left: 0;
+}
+.portfolioContainer .sectionRight:hover .shadow_class{
+	opacity: 1;
+	transition: 0.5s;
+	width: 51%;
+	z-index: -1;
+}
+.portfolioContainer .sectionRight:hover .clone_shawod{
+	width: 92%;
+	height: 92%;
+	transition: 1s;
+	float: right;
+}
+.portfolioContainer .sectionRight:hover label{
+	color: #ffffff;
+	z-index: 11;
+	transition: 0.5s;
+}
+.portfolioContainer .sectionRight:hover label h2{
+	color: #000;
+	transition: 0.5s;
+}
+.portfolioContainer .sectionRight:hover .connecting-div{
+	border-left: 53px solid #53b6d3;
+	transition: 0.5s;
+}
+.p_viewmore{
+	background: #52b4d2;
+    color: #fff;
+    padding: 10px;
+    bottom: 12%;
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    transition: 0.5s;
+}
+.portfolioContainer .sectionRight .p_viewmore{
+	left: 32%;
+}
+.portfolioContainer .sectionLeft label p{
+	text-align: inherit;
+}
+.portfolio_custom:hover .p_viewmore{
+	background: #000;
+	transition: 0.5s;
+}
+@media screen and (max-width: 1024px){
+
+	.portfolioContainer .sectionLeft label, .portfolioContainer .sectionRight label{
+		font-size: 12px !important;
+	}
+	.portfolio_custom h2{
+		margin-bottom: 5px !important;
+	    font-size: 18px !important;
+	    line-height: 18px;
+	}
+	.portfolioContainer .sectionRight .p_viewmore{
+		left: 20%;
+	}
+}
+@media screen and (max-width: 768px){
+	
+	.portfolioContainer .sectionLeft, .portfolioContainer .sectionRight{
+		width: 100%;
+	}
+	.portfolio_custom:nth-child(even).sectionLeft img{
+		float: right;
+	}
+	.portfolio_custom:nth-child(even) .connecting-div{
+		border-left: 53px solid #fff;
+	    border-right: initial !important;
+	    left: 51px;
+	}
+	.portfolio_custom:nth-child(even):hover .connecting-div{
+		border-left: 53px solid #53b6d3 !important;
+	}
+	.portfolio_custom:nth-child(even):hover .shadow_class{
+		left: 0;
+		opacity: 1;
+	    transition: 0.5s;
+	    width: 51%;
+	    z-index: -1;
+	}
+	.portfolio_custom:nth-child(even):hover .clone_shawod{
+		width: 92%;
+	    height: 92%;
+	    transition: 1s;
+	    float: right !important;
+	}
+	.portfolio_custom:nth-child(even) .p_viewmore{
+		left: 20%;
+	}
+
+
+	.portfolio_custom:nth-child(odd).sectionRight img{
+		float: left;
+	}
+	.portfolio_custom:nth-child(odd) .connecting-div{
+		/*border-left: 53px solid #fff;
+	    border-right: initial !important;
+	    left: 51px;*/
+		border-right: 53px solid #fefffe;
+	    border-left: initial;
+	    left: -51px;
+	    
+	}/*
+	.portfolio_custom:nth-child(odd):hover .connecting-div{
+		border-right: 53px solid #fefffe;
+	} */
+	.portfolio_custom:nth-child(odd):hover .shadow_class{
+		/*left: 0;
+		opacity: 1;
+	    transition: 0.5s;
+	    width: 51%;
+	    z-index: -1;*/
+	    left: 50%;
+	    width: 100%;
+	    height: 100%;
+	}
+	.portfolio_custom:nth-child(odd):hover.sectionRight:hover .clone_shawod{
+		float: left;
+		width: 46%;
+	}
+	.portfolio_custom:nth-child(odd):hover.sectionLeft .clone_shawod{
+		/*width: 92%;
+	    height: 92%;
+	    transition: 1s;
+	    float: right !important;*/
+	    width: 46%;
+	}
+	.portfolio_custom:nth-child(odd) .p_viewmore{
+		left: initial;
+	}
+	.portfolioContainer .sectionRight:hover .connecting-div{
+		border-left: initial;
+		transition: 0.5s;
+	}
+	.portfolio_custom:nth-child(odd):hover .connecting-div{
+		border-right: 53px solid #53b6d3;
+	}
+}/*
+@media screen and (min-width: 768) and (max-width: 1024px) {
+	.img-valign {
+		width: 100% !important;
+	}
+	.portfolioContainer .sectionLeft label, .portfolioContainer .sectionRight label {
+		width: 100%;
+	}
+}
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+	.portfolioContainer .sectionLeft, .portfolioContainer .sectionRight {
+	    width: 100%;
+	    height: 270px;
+	}	 
+	.img-valign {
+		width: 100% !important;
+	}
+	.portfolioContainer .sectionLeft label, .portfolioContainer .sectionRight label {
+		width: 100%;
+	}
+	.portfolioContainer .sectionLeft label, .portfolioContainer .sectionRight label {
+	    position: relative;
+	    top: 0;
+	    left: 50%;
+	    bottom: 0px;
+	    transform: translate(-50%, -112%);
+	    background-color: #04040487;
+	    color: white;
+	    padding: 3px 10px;
+	    height: 250px;
+	    margin-top: 30px;
+	    text-align: center;
+	}
+	.portfolioContainer .sectionLeft label h2, .portfolioContainer .sectionRight label h2 {
+		color: white;
+		margin: 20px 0px;
+	}
+	.portfolioContainer .sectionLeft label h2 span, .portfolioContainer .sectionRight label h2 span {
+		text-shadow: 1px 1px #ffffff;
+	}
+}*/

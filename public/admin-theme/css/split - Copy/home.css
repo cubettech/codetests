@@ -1,0 +1,223 @@
+.main_header{
+	background-color: transparent;
+}
+.pages{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	margin: auto;
+	max-width: 1250px;
+}
+
+#home .cnts{
+	position: absolute;
+	top: 30%;
+	margin-top: 124px;
+	left: 0;
+	right: 0;
+	padding: 0 40px;
+	text-align: center;
+}
+#home .cnts p{
+	width: 90%;
+	margin: auto;
+}
+h1.main_title{
+	text-align: center;
+	margin-bottom: 15px;
+}
+.pages > section{
+	overflow: hidden;
+	width: 100%;
+	padding: 0 26px;
+	padding-top: 75px;
+	/*max-height: 768px;*/
+}
+.pages #home{
+	background: url('../../images/icons-bg.png') no-repeat center 250px;
+	background-size: 1000px;
+}
+.pages #home.active{
+	background-position: center center;
+	background-size: 864px;
+}
+section h1.main_title{
+	top: -200px;
+	position: relative;
+	font-weight: 500;
+}
+section.active h1.main_title{
+	top:0px;
+}
+section h1.main_title i{
+	opacity: 0;
+	/*left: 300px;*/
+	position: relative;
+
+	-webkit-transform:  scale(6);
+	-ms-transform:  scale(6);
+	-o-transform:  scale(6);
+	transform:  scale(6);
+	display: inline-block;
+}
+section.active h1.main_title i{
+	opacity: 1;
+	/*left: 0px;*/
+	position: relative;
+	display: inline-block;
+	-webkit-transform:  scale(1);
+	-ms-transform:  scale(1);
+	-o-transform:  scale(1);
+	transform:  scale(1);
+}
+.pages #home .logo{
+	overflow: hidden;
+	margin: auto;
+	width: 242px;
+	position: absolute;
+	left: 50%;
+	margin-left: -121px;
+	top: 40%;
+	margin-top: 0;
+	height: 224px;
+	-webkit-filter: blur(0px);
+	-o-filter: blur(0px);
+	filter: blur(0px);
+	opacity: 0;
+}
+.pages #home .logo:hover{
+	-webkit-animation: blurImg 1000ms ;
+	-o-animation: blurImg 1000ms ;
+	animation: blurImg 1000ms ;
+}
+.pages #home.active .logo{
+	top: 30%;
+	opacity: 1;
+	margin-top: -112px;
+}
+@-webkit-keyframes blurImg2{
+	0% {
+		-webkit-filter: blur(0);
+		-o-filter: blur(0);
+		filter: blur(0);
+	}
+	20% {
+		-webkit-filter: blur(2px);
+		-o-filter: blur(2px);
+		filter: blur(2px);
+	}
+	100% {
+		-webkit-filter: blur(0);
+		-o-filter: blur(0);
+		filter: blur(0);
+	}
+}
+.pages #services{
+	padding-bottom: 0;
+}
+
+article.post{
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+article.post:nth-child(2n+1){
+	clear: left;
+}
+article.post header img{
+	display: none;
+}
+article.post header{
+	height: 180px;
+}
+h1.partners{
+	margin-top: 20px;
+}
+
+
+
+.slick-slide img{
+	max-width: 100%;
+	height: auto;
+}
+.slick-next,
+.slick-prev{
+	position: absolute;
+	top: 50%;
+	right: -30px;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0);
+	margin-top: -25px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	color: transparent;
+	cursor: pointer;
+	text-align: right;
+	font-size: 30px;
+	width: 37px;
+}
+.slick-next:after,
+.slick-prev:after{
+	content: '\a62a';
+	color: #000;
+	font-family: 'Ecomm-icon';
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.slick-next:after{
+	content: '\a62c';
+	left: 0;
+}
+.slick-prev{
+	left: -30px;
+	text-align: left;
+}
+.slick-next{
+	
+}
+
+.simpleGrid{
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.21);
+}
+.simpleGrid > li{
+	float: left;
+	padding: 1% 5%;
+	width: 25%;
+	border-left:  1px solid rgba(0, 0, 0, 0.21);
+}
+.simpleGrid > li:nth-child(1),
+.simpleGrid > li:nth-child(2),
+.simpleGrid > li:nth-child(3),
+.simpleGrid > li:nth-child(4){
+	border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
+.simpleGrid > li:nth-child(4n+1){
+	border-left-color: transparent;
+}
+.simpleGrid > li > img{
+	max-width: 100%;
+	height: auto;
+	-webkit-transition: 500ms all ease, 1000ms opacity ease;
+	-o-transition: 500ms all ease, 1000ms opacity ease;
+	transition: 500ms all ease, 1000ms opacity ease;
+	opacity: 0;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
+.simpleGrid > li._ > img{
+	opacity: 1;
+}
+
+.simpleGrid > li:hover > img{
+	filter: none;
+	-webkit-filter: grayscale(0%);
+}
